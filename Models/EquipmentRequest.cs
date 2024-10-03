@@ -22,7 +22,7 @@ namespace BorrowEquip.Models
 
         public int Id { get; set; }
 
-        [Required]
+        [Required (ErrorMessage = "Please enter your name")]
         public string Name { get; set; }
 
         [Required, EmailAddress]
@@ -31,10 +31,12 @@ namespace BorrowEquip.Models
         [Required, Phone, RegularExpression(@"^\d{3}-\d{3}-\d{4}$", ErrorMessage = "Phone number must be in the format xxx-xxx-xxxx")]
         public string PhoneNumber { get; set; }
 
-        [Required]
+        [Required (ErrorMessage = "Please select a Role")]
+        [EnumDataType(typeof(UserRole), ErrorMessage = "Please select a valid Role")]
         public UserRole Role { get; set; }
 
-        [Required]
+        [Required (ErrorMessage = "Please select a equipment Type.")]
+        [EnumDataType(typeof(EquipmentType), ErrorMessage = "Please select a valid Equipment Type")]
         public EquipmentType EquipmentType { get; set; }
 
         [Required]
@@ -43,5 +45,4 @@ namespace BorrowEquip.Models
         [Required, Range(1, int.MaxValue, ErrorMessage = "Duration must be greater than zero")]
         public int Duration { get; set; }
     }
-
 }

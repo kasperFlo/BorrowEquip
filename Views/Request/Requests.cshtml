@@ -10,6 +10,9 @@
             <th>Type</th>
             <th>Description</th>
             <th>Availability</th>
+            <th>Role</th>
+            <th>Reason</th>
+            <th>Approve</th>
         </tr>
     </thead>
 
@@ -23,6 +26,12 @@
                 <td>@(equipmentR.EquipmentType)</td>
                 <td>@(equipmentR.Role)</td>
                 <td>@(equipmentR.RequestDetails)</td>
+
+                <td>
+                    <button class="btn btn-success btn-sm" > Accept</button>
+                    <button class="btn btn-danger btn-sm"> Deny</button>
+                </td>
+
             </tr>
         }
     </tbody>

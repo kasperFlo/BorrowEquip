@@ -45,8 +45,8 @@
                                 <label asp-for="Role">Requester Role:</label>
                                 <select asp-for="Role" class="form-control">
                                     <option value="">Choose an option</option>
-                                    <option value="true">Student</option>
-                                    <option value="false">Professor</option>
+                                    <option value="Student">Student</option>
+                                    <option value="Professor">Professor</option>
                                 </select>
                                 <span asp-validation-for="Role" class="text-danger"></span>
                             </div>
@@ -54,9 +54,15 @@
                             <div class="form-group">
                                 <label asp-for="EquipmentType">Equipment Type:</label>
                                 <select asp-for="EquipmentType" asp-items="Html.GetEnumSelectList<EquipmentType>()" class="form-control">
-                                    <option selected="selected" value="">Please select the equipment type</option>
+                                    <option selected="Laptop" value="">Please select the equipment type</option>
                                 </select>
                                 <span asp-validation-for="EquipmentType" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="RequestDetails">Details :</label>
+                                <input asp-for="RequestDetails" class="form-control" />
+                                <span asp-validation-for="RequestDetails" class="text-danger"></span>
                             </div>
 
                             <div class="form-group">
@@ -67,6 +73,7 @@
 
                             <div class="form-group mb-0">
                                 <button type="submit" class="btn btn-primary btn-block">Submit Request</button>
+
                             </div>
                         </form>
                     </div>

@@ -9,7 +9,7 @@ using BorrowEquip.Models;
 namespace BorrowEquip.Controllers
 {
     public class EquipmentController : Controller {
-        private static List<Equipment> _equipmentList;
+        private List<Equipment> _equipmentList;
         
         public EquipmentController()
         {
