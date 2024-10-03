@@ -18,12 +18,24 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/florian/Documents/Semester5/EnterpriseSystems/BorrowEquip
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/florian/Documents/Semester5/EnterpriseSystems/BorrowEquip/Views/Equipment/AllEquipment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXF1aXBtZW50L0FsbEVxdWlwbWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/florian/Documents/Semester5/EnterpriseSystems/BorrowEquip/Views/Equipment/AvailableEquipment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXF1aXBtZW50L0F2YWlsYWJsZUVxdWlwbWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/florian/Documents/Semester5/EnterpriseSystems/BorrowEquip/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/florian/Documents/Semester5/EnterpriseSystems/BorrowEquip/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+[/Users/florian/Documents/Semester5/EnterpriseSystems/BorrowEquip/Views/Request/RequestForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVxdWVzdC9SZXF1ZXN0Rm9ybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/florian/Documents/Semester5/EnterpriseSystems/BorrowEquip/Views/Request/Requests.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVxdWVzdC9SZXF1ZXN0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/florian/Documents/Semester5/EnterpriseSystems/BorrowEquip/Views/Shared/Error.cshtml]

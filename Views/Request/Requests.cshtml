@@ -1,0 +1,30 @@
+@model List<EquipmentRequest>
+
+<h2 class="text-danger">All Equipment Requests Admin Page</h2>
+
+<table class="table table-striped">
+    
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Type</th>
+            <th>Description</th>
+            <th>Availability</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var equipmentR in Model)
+        {
+            <tr class="@(equipmentR.Role == UserRole.Professor ? "table-primary" : "table-success")">
+                <td>@equipmentR.Name</td>
+                <td>@equipmentR.Email</td>
+                <td>@equipmentR.PhoneNumber</td>
+                <td>@(equipmentR.EquipmentType)</td>
+                <td>@(equipmentR.Role)</td>
+                <td>@(equipmentR.RequestDetails)</td>
+            </tr>
+        }
+    </tbody>
+
+</table>

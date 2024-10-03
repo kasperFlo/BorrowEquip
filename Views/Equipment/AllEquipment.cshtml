@@ -1,0 +1,28 @@
+@model List<Equipment>
+
+<h2>All Equipment Listing</h2>
+
+<table class="table table-striped">
+    
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Type</th>
+            <th>Description</th>
+            <th>Availability</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var equipment in Model)
+        {
+            <tr class="@(equipment.IsAvailable ? "table-success" : "table-danger")">
+                <td>@equipment.Id</td>
+                <td>@equipment.Type</td>
+                <td>@equipment.Description</td>
+                <td>@(equipment.IsAvailable ? "Available" : "Not Available")</td>
+            </tr>
+        }
+    </tbody>
+
+</table>

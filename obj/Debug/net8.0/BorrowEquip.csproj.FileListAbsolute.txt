@@ -29,3 +29,4 @@
 /Users/florian/Documents/Semester5/EnterpriseSystems/BorrowEquip/obj/Debug/net8.0/BorrowEquip.pdb
 /Users/florian/Documents/Semester5/EnterpriseSystems/BorrowEquip/obj/Debug/net8.0/BorrowEquip.genruntimeconfig.cache
 /Users/florian/Documents/Semester5/EnterpriseSystems/BorrowEquip/obj/Debug/net8.0/ref/BorrowEquip.dll
+/Users/florian/Documents/Semester5/EnterpriseSystems/BorrowEquip/obj/Debug/net8.0/BorrowEquip.sourcelink.json
