@@ -14,6 +14,7 @@
 /Users/florian/Documents/Semester5/EnterpriseSystems/TodoList/obj/Debug/net8.0/TodoList.MvcApplicationPartsAssemblyInfo.cache
 /Users/florian/Documents/Semester5/EnterpriseSystems/TodoList/obj/Debug/net8.0/TodoList.RazorAssemblyInfo.cache
 /Users/florian/Documents/Semester5/EnterpriseSystems/TodoList/obj/Debug/net8.0/TodoList.RazorAssemblyInfo.cs
+/Users/florian/Documents/Semester5/EnterpriseSystems/TodoList/obj/Debug/net8.0/TodoList.sourcelink.json
 /Users/florian/Documents/Semester5/EnterpriseSystems/TodoList/obj/Debug/net8.0/staticwebassets.build.json
 /Users/florian/Documents/Semester5/EnterpriseSystems/TodoList/obj/Debug/net8.0/staticwebassets.development.json
 /Users/florian/Documents/Semester5/EnterpriseSystems/TodoList/obj/Debug/net8.0/staticwebassets/msbuild.TodoList.Microsoft.AspNetCore.StaticWebAssets.props
@@ -29,4 +30,3 @@
 /Users/florian/Documents/Semester5/EnterpriseSystems/TodoList/obj/Debug/net8.0/TodoList.pdb
 /Users/florian/Documents/Semester5/EnterpriseSystems/TodoList/obj/Debug/net8.0/TodoList.genruntimeconfig.cache
 /Users/florian/Documents/Semester5/EnterpriseSystems/TodoList/obj/Debug/net8.0/ref/TodoList.dll
-/Users/florian/Documents/Semester5/EnterpriseSystems/TodoList/obj/Debug/net8.0/TodoList.sourcelink.json

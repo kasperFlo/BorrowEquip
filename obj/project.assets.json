@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/florian/Documents/Semester5/EnterpriseSystems/BorrowEquip/BorrowEquip.csproj",
-      "projectName": "BorrowEquip",
-      "projectPath": "/Users/florian/Documents/Semester5/EnterpriseSystems/BorrowEquip/BorrowEquip.csproj",
+      "projectUniqueName": "/Users/florian/Documents/Semester5/EnterpriseSystems/TodoList/TodoList.csproj",
+      "projectName": "TodoList",
+      "projectPath": "/Users/florian/Documents/Semester5/EnterpriseSystems/TodoList/TodoList.csproj",
       "packagesPath": "/Users/florian/.nuget/packages/",
-      "outputPath": "/Users/florian/Documents/Semester5/EnterpriseSystems/BorrowEquip/obj/",
+      "outputPath": "/Users/florian/Documents/Semester5/EnterpriseSystems/TodoList/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/florian/.nuget/NuGet/NuGet.Config"

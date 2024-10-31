@@ -4,21 +4,21 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - BorrowEquip</title>
+    <title>@ViewData["Title"] - TodoList</title>
 
 @* set up bootstrap *@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/BorrowEquip.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/TodoList.styles.css" asp-append-version="true" />
 
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" asp-controller="Equipment" asp-action="AllEquipment">All Equipment Listing</a></li>
-                    <li class="nav-item"><a class="nav-link" asp-controller="Equipment" asp-action="AvailableEquipment">Available Equipment</a></li>
-                    <li class="nav-item"><a class="nav-link" asp-controller="Request" asp-action="RequestForm">Request Form</a></li>
+                    @* <li class="nav-item"><a class="nav-link" asp-controller="Equipment" asp-action="AllEquipment">All Equipment Listing</a></li> *@
+                    @* <li class="nav-item"><a class="nav-link" asp-controller="Equipment" asp-action="AvailableEquipment">Available Equipment</a></li> *@
+                    @* <li class="nav-item"><a class="nav-link" asp-controller="Request" asp-action="RequestForm">Request Form</a></li> *@
                     @* <li class="nav-item"><a class="nav-link" asp-controller="Request" asp-action="Requests">Admin Page</a></li> *@
                 </ul>
             </div>
@@ -43,7 +43,7 @@
 
 <footer class="border-top footer text-muted">
     <div class="container">
-        &copy; 2024 - BorrowEquip 
+        &copy; 2024 - TodoList 
     </div>
 </footer>
 
