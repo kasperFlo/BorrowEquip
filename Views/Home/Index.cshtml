@@ -1,31 +1,96 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Todo List Manager";
 }
 
-<div class="text-center">
-    <h1>Todo List Tool HOME PAGE</h1>
-    <p>Welcome to the My Midterm Home Page. Here you can add or remove tod list items.</p>
+<div class="container mt-5">
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">
+            <h1 class="display-4 mb-0">Task Manager</h1>
+        </div>
 
-    <h1>To-Do List</h1>
-    <form asp-action="Add" method="post">
-        <input type="text" name="task" required />
-        <button type="submit">Add</button>
-    </form>
+        <div class="card-body">
+            <div class="row justify-content-center mb-4">
+                <div class="col-md-8">
+                    <form asp-action="Add" method="post" class="input-group">
+                        <input type="text" name="task" class="form-control form-control-lg"
+                            placeholder="Enter a new task..." required />
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-plus"></i> Add Task
+                        </button>
+                    </form>
+                </div>
+            </div>
 
-
-    <h2>Tasks</h2>
-    <ul>
-        @foreach (var item in Model)
-        {   
-            <li>
-                @item.Task
-                <form asp-action="Delete" method="post" style="display:inline;">
-                    <input type="hidden" name="id" value="@item.Id" />
-                    <button type="submit">Delete</button>
-                </form>
-            </li>
-        }
-    </ul>
-    <h2>Completed Tasks</h2>
-
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="task-list">
+                        @if (Model.Count == 0)
+                        {
+                            <div class="text-center text-muted my-5">
+                                <i class="fas fa-tasks fa-3x mb-3"></i>
+                                <p>No tasks yet. Add your first task above!</p>
+                            </div>
+                        }
+                        else
+                        {
+                            <ul class="list-group">
+                                @foreach (var item in Model)
+                                {
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <span class="task-text">@item.Task</span>
+                                        <div class="btn-group">
+                                            <form asp-action="Delete" method="post">
+                                                <input type="hidden" name="id" value="@item.Id" />
+                                                <button type="submit" class="btn btn-danger btn-sm">
+                                                    <i class="fas fa-trash"></i>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </li>
+                                }
+                            </ul>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+@section Styles {
+    <style>
+        .task-list {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+
+        .task-text {
+            font-size: 1.1rem;
+        }
+
+        .list-group-item {
+            transition: all 0.2s ease-in-out;
+        }
+
+        .list-group-item:hover {
+            background-color: #f8f9fa;
+        }
+
+        .btn-group form {
+            margin: 0;
+        }
+
+        .card {
+            border-radius: 15px;
+        }
+
+        .card-header {
+            border-top-left-radius: 15px !important;
+            border-top-right-radius: 15px !important;
+        }
+    </style>
+}
+
+@section Scripts {
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js"></script>
+}
